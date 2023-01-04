@@ -1,15 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend simplified</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap'); </style>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section id="Home">
+      <nav class="nav">
+        <img src="./assets/FES.svg" class="nav nav--img" />
+        <div class="nav__link">
+          <a class="nav__link--page" href="#about">about</a>
+          <a class="nav__link--page" href="#contact">contact</a>
+          <a class="nav__link--page" href="#discord">Discord</a>
+        </div>
+      </nav>
+     
+      <header class="home">
+        <div class="row">
+        <div class="home__header">
+          <h1 class="home__header--h1">
+            Best place to learn 
+            frontend
+          </h1>
+          <p class="home__header--paragraph">
+            Go from beginner to absolute pro with 
+            a simplified process
+          </p>
+          <button class="home__header--button">start now</button>
+        </div>
+        <figure class="home__imageholder">
+          <img class="home__imageholder--img" src="./assets/laptop.png" />
+        </figure>
+      </div>
+      </header>
+    </section>
+    <main>
+      <section id="about" class="about">
+        <div class="about__head">
+          <h2 class="about__head--header">About</h2>
+        </div>
+        <div class="row">
+        <div class="about__description">
+          <div class="about__descriptionsub">
+            <p class="about--pharagraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              veniam qui vel, ab nam corporis? Ab nam nobis consectetur
+              dignissimos amet. Dolore magni qui quos ducimus neque laboriosam,
+              mollitia iure!
+            </p>
+            <p class="about--pharagraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae quidem assumenda esse, laboriosam minus aliquam omnis,
+              ut fugiat deserunt dolores porro numquam. Repudiandae amet,
+              provident in commodi rerum aliquam porro?
+            </p>
+          </div>
+          <figure class="about__description--imgholder">
+            <img
+              class="about__description--img"
+              src="./assets/about.jpg"
+              alt="about-image"
+            />
+          </figure>
+        </div>
+      </div>
+      </section>
+
+      <section id="discord" class="discord">
+        <div class="discord__head">
+          <h2 class="discord__head--header">Discord</h2>
+        </div>
+        <div class="row">
+        <div class="discord__main">
+          <figure class="discord__holder">
+            <img
+              class="discord__holder--img"
+              src="./assets/discord.png"
+              alt="discord-image"
+            />
+          </figure>
+          <div class="discord__description">
+            <p class="discord__description--pharagraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non,
+              ullam fuga! Libero culpa vero nobis quo excepturi delectus est in?
+            </p>
+            <p class="discord__description--pharagraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+              tempore enim quas nostrum delectus, recusandae aliquid facilis
+              placeat voluptates dolorem.
+            </p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact__head">
+          <h2 class="contact__head--title">contact</h2>
+        </div>
+
+        <div class="form">
+          <form class="form__main" action="">
+            <label for="email">Email</label><br />
+            <input
+              placeholder="jane@emample.com"
+              class="form__main--email form__main"
+              type="email"
+              name="email"
+            /><br />
+            <label for="description">Description</label><br />
+            <textarea
+              placeholder="Nice website! lets contact"
+              class="form__main--description form__main"
+              name="description"
+              id="description"
+              ls="30"
+              rows="8"
+            ></textarea
+            ><br />
+            <input
+              class="form__main--submit form__main"
+              type="submit"
+              name="submit"
+              id="submit"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img class="footer--img" src="./assets/FES.svg" alt="footer logo" />
+      <div class="footer__link">
+        <a class="footer-links" href="#about">About</a>
+        <a class="footer-links" href="#discord">Discord</a>
+        <a class="footer-links" href="#contact">Contact</a>
+      </div>
+      <p>copyright Frontend Simplified</p>
+    </footer>
+  </body>
 </html>
